@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Gramma.Caching.MRUCache&lt;K, V&gt;">
+    <Position X="0.5" Y="0.5" Width="5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Gramma.Caching.MRUCache&lt;K, V&gt;.Item" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MRUCache.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Gramma.Caching.MRUCache&lt;K, V&gt;.Statistics">
+        <TypeIdentifier>
+          <NewMemberFileName>MRUCache.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AwABAAAJEAQAAEFAAAAAJAAMAAAAAAAAAAAAAAJIAAA=</HashCode>
+      <FileName>MRUCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
