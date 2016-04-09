@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 using System.Threading;
 using System.Diagnostics;
 
-namespace Gramma.Caching
+namespace Grammophone.Caching
 {
 	/// <summary>
 	/// Thread-safe cache of <typeparamref name="V"/> items indexed by 

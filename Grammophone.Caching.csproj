@@ -8,8 +8,8 @@
     <ProjectGuid>{2C834C5B-AA21-43FA-826E-398AB4DE25AC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gramma.Caching</RootNamespace>
-    <AssemblyName>Gramma.Caching</AssemblyName>
+    <RootNamespace>Grammophone.Caching</RootNamespace>
+    <AssemblyName>Grammophone.Caching</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -22,7 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Gramma.Caching.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Grammophone.Caching.XML</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Gramma.Caching.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Grammophone.Caching.XML</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Collections.Concurrent;
 using System.Threading;
 using System.Diagnostics;
 
-namespace Gramma.Caching
+namespace Grammophone.Caching
 {
 	/// <summary>
 	/// Non-Thread-safe cache of <typeparamref name="V"/> items indexed by 
