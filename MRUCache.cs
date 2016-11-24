@@ -256,10 +256,25 @@ namespace Grammophone.Caching
 		/// <returns>Returns true if the item was found in the cache, else false.</returns>
 		public bool Remove(K key)
 		{
+			V removedValue;
+
+			return Remove(key, out removedValue);
+		}
+
+		/// <summary>
+		/// Removes an item from the cache.
+		/// </summary>
+		/// <param name="key">The key defining the item.</param>
+		/// <param name="value">Set to the removed value, if found in the cache.</param>
+		/// <returns>Returns true if the item was found in the cache, else false.</returns>
+		public bool Remove(K key, out V value)
+		{
 			Item removedItem;
 
 			if (this.dictionary.TryRemove(key, out removedItem))
 			{
+				value = removedItem.Value;
+
 				bool queueLockTaken = false;
 				this.queueSpinLock.Enter(ref queueLockTaken);
 
@@ -302,6 +317,8 @@ namespace Grammophone.Caching
 			}
 			else
 			{
+				value = default(V);
+
 				return false;
 			}
 		}
