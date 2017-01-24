@@ -18,8 +18,13 @@ namespace Grammophone.Caching
 		/// <param name="asyncValueFactory">
 		/// An asynchronous function to produce the value when it is needed.
 		/// </param>
-		public AsyncLazy(Func<Task<T>> asyncValueFactory)
-			: base(asyncValueFactory)
+		/// <param name="isThreadSafe">
+		/// If true, makes the instance usable concurrently by multiple threads.
+		/// Set to false when high performance is crucial and the instance is guaranteed to be
+		/// accessed by one thread at a time.
+		/// </param>
+		public AsyncLazy(Func<Task<T>> asyncValueFactory, bool isThreadSafe = true)
+			: base(asyncValueFactory, isThreadSafe)
 		{
 		}
 
@@ -29,8 +34,13 @@ namespace Grammophone.Caching
 		/// <param name="valueFactory">
 		/// A function to produce the value when it is needed.
 		/// </param>
-		public AsyncLazy(Func<T> valueFactory)
-			: base(() => Task.Run(valueFactory))
+		/// <param name="isThreadSafe">
+		/// If true, makes the instance usable concurrently by multiple threads.
+		/// Set to false when high performance is crucial and the instance is guaranteed to be
+		/// accessed by one thread at a time.
+		/// </param>
+		public AsyncLazy(Func<T> valueFactory, bool isThreadSafe = true)
+			: base(() => Task.Run(valueFactory), isThreadSafe)
 		{
 		}
 	}
