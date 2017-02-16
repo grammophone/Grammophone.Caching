@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncLazy.cs" />
+    <Compile Include="AsyncMRUCache.cs" />
+    <Compile Include="AsyncSequentialMRUCache.cs" />
     <Compile Include="MRUCache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SequentialMRUCache.cs" />
