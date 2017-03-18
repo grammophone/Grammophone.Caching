@@ -263,7 +263,7 @@ namespace Grammophone.Caching
 		/// <param name="key">The key defining the item.</param>
 		/// <param name="value">Set to the removed value, if found in the cache.</param>
 		/// <returns>Returns true if the item was found in the cache, else false.</returns>
-		public virtual bool Remove(K key, out V value)
+		public bool Remove(K key, out V value)
 		{
 			Item removedItem;
 
