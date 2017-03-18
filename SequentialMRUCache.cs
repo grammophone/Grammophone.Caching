@@ -263,7 +263,7 @@ namespace Grammophone.Caching
 		/// <param name="key">The key defining the item.</param>
 		/// <param name="value">Set to the removed value, if found in the cache.</param>
 		/// <returns>Returns true if the item was found in the cache, else false.</returns>
-		public bool Remove(K key, out V value)
+		public virtual bool Remove(K key, out V value)
 		{
 			Item removedItem;
 
@@ -332,12 +332,19 @@ namespace Grammophone.Caching
 		/// <summary>
 		/// Evict all items from the cache.
 		/// </summary>
-		public void Clear()
+		/// <returns>
+		/// Returns the evicted cache entries.
+		/// </returns>
+		public virtual IEnumerable<KeyValuePair<K, V>> Clear()
 		{
+			var removedEntries = this.dictionary.ToArray();
+
 			this.leastRecentItem = null;
 			this.mostRecentItem = null;
 
 			this.dictionary.Clear();
+
+			return removedEntries.Select(e => new KeyValuePair<K, V>(e.Key, e.Value.Value));
 		}
 
 		/// <summary>
