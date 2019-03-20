@@ -2,11 +2,11 @@
   <PropertyGroup>
     <ProductVersion>8.0.30703</ProductVersion>
     <ProjectGuid>{2C834C5B-AA21-43FA-826E-398AB4DE25AC}</ProjectGuid>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyTitle>Grammophone.Caching</AssemblyTitle>
-    <Company>Microsoft</Company>
+    <Company>Grammophone</Company>
     <Product>Grammophone.Caching</Product>
-    <Copyright>Copyright © Microsoft 2013</Copyright>
+    <Copyright>Copyright © Grammophone 2013</Copyright>
     <DocumentationFile>bin\$(Configuration)\Grammophone.Caching.XML</DocumentationFile>
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
@@ -17,8 +17,12 @@
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
+    <None Remove=".git" />
+    <None Remove=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.*" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.*" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MRUCache.cd" />
