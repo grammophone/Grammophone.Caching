@@ -7,14 +7,15 @@
     <Company>Grammophone</Company>
     <Product>Grammophone.Caching</Product>
     <Copyright>Copyright © Grammophone 2013</Copyright>
-    <DocumentationFile>bin\$(Configuration)\Grammophone.Caching.XML</DocumentationFile>
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
+    <DocumentationFile>bin\Debug\Grammophone.Caching.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
+    <DocumentationFile>bin\Release\Grammophone.Caching.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <None Remove=".git" />
