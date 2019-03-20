@@ -21,9 +21,6 @@
     <None Remove=".gitignore" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.*" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="MRUCache.cd" />
   </ItemGroup>
 </Project>
