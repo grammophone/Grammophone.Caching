@@ -10,7 +10,7 @@ namespace Grammophone.Caching
 	/// while the program still holds on to the reference to the cache.
 	/// </summary>
 	/// <typeparam name="K">The type of item keys.</typeparam>
-	/// <typeparam name="V">the type of items cached.</typeparam>
+	/// <typeparam name="V">The type of items cached.</typeparam>
 	/// <remarks>
 	/// The methods of this cache are thread-safe, suitable for parallel algorithms.
 	/// </remarks>
