@@ -53,7 +53,7 @@ namespace Grammophone.Caching
 
 		#endregion
 
-		#region Public method
+		#region Public methods
 
 		/// <summary>
 		/// Get an item from the cache or return a newly created one.
