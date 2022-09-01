@@ -128,7 +128,7 @@ namespace Grammophone.Caching
 		/// <param name="maxCount">The maximum items count in the cache.</param>
 		public MRUCache(Func<K, V> itemCreator, int maxCount = 1024)
 		{
-			if (itemCreator == null) throw new ArgumentNullException("itemCreator");
+			if (itemCreator == null) throw new ArgumentNullException(nameof(itemCreator));
 
 			this.itemCreator = itemCreator;
 			this.MaxCount = maxCount;
