@@ -7,6 +7,7 @@
     <Company>Grammophone</Company>
     <Product>Grammophone.Caching</Product>
     <Copyright>Copyright © Grammophone 2013</Copyright>
+		<LangVersion>9.0</LangVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

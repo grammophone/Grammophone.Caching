@@ -19,7 +19,7 @@ namespace Grammophone.Caching
 	/// <remarks>
 	/// The methods of this cache are not thread-safe.
 	/// </remarks>
-	public class SequentialMRUCache<K, V>
+	public class SequentialMRUCache<K, V> : IMRUCache<K, V>
 	{
 		#region Auxilliary types
 

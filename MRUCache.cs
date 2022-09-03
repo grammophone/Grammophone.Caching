@@ -21,7 +21,7 @@ namespace Grammophone.Caching
 	/// The methods of this cache are thread-safe, suitable for parallel algorithms.
 	/// </remarks>
 	[Serializable]
-	public class MRUCache<K, V> : IDeserializationCallback
+	public class MRUCache<K, V> : IDeserializationCallback, IMRUCache<K, V>
 	{
 		#region Auxilliary types
 
